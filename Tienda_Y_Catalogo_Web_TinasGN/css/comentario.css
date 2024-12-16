@@ -1,0 +1,136 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para los enlaces del menú */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Black Ops One";
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el formulario de comentarios */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Ocultar el texto "Sin archivos seleccionados" */
+input[type="file"] {
+    color: transparent;
+}
+
+input[type="file"]::before {
+    content: "Seleccionar archivo";
+    display: inline-block;
+    outline: none;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 10pt;
+    background-color: #ffbf00;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="file"]:hover::before {
+    border-color: black;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px; /* Agrega un espacio superior */
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilo para la sección de comentarios */
+#comments-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#comments-section div {
+    margin-bottom: 20px;
+}
+
+#comments-section p {
+    margin-bottom: 5px;
+}
+
+#comments-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: "Black Ops One";
+    text-align: center;
+}
+
+

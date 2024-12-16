@@ -1,0 +1,300 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2B2B2B;
+    color: #ffffff;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px; 
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    font-family: "Black Ops One";
+    font-size: 20px;
+    color: #F2BE22;
+}
+
+/* Estilos para el icono en el header */
+header img {
+    max-width: 150%;
+    max-height: 150px; 
+    margin-bottom: .0000001px;
+    height: auto;
+}
+
+/* Estilos para la frase */
+.main-phrase {
+    text-align:center;
+    padding: 5px 0; /* Ajusta el espacio según sea necesario */
+}
+
+.main-phrase p {
+    font-family: "Raleway"; /* Fuente Arial Black */
+    font-size: 40px; /* Tamaño de letra 30 */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: #FFE500; /* Color amarillo */
+}
+
+/* Estilos para la sección de Productos */
+.product-section {
+    background-color: #2B2B2B; /* Color de fondo más claro */
+    padding: 20px 0; /* Espacio alrededor de la sección */
+    text-align: center; /* Centrar el contenido */
+    color: #FFFFFF; /* Color del texto */
+}
+
+/* Estilos para el título principal de la sección de Productos */
+.section-title {
+    font-family: "Black Ops One"; /* Fuente Arial Black */
+    font-size: 35px; /* Tamaño de letra 35 */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: #ffffff; /* Color amarillo */
+    margin-bottom: 20px; /* Espacio inferior */
+    display: block; /* Para que el título se muestre en una línea */
+}
+
+/* Estilos para las tarjetas de producto */
+.product-card {
+    display: inline-block;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    padding: 25px;
+    width: calc(30% - 20px); /* Ancho de cada tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    background-color: #BF9A2A; /* Fondo para el contenedor */
+    vertical-align: top; /* Alineación vertical superior */
+    box-sizing: border-box; /* Tamaño de la caja incluyendo el borde */
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos vayan a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-around; /* Añade un espacio entre las tarjetas */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #FFFFFF; /* Fondo para la imagen */
+    border-radius: 5px; /* Borde redondeado para la imagen */
+}
+
+.product-info {
+    text-align: center;
+    background-color: #2B2B2B; /* Fondo para la información */
+    border-radius: 5px; /* Borde redondeado para la información */
+    padding: 1px;
+    width: 100%;
+}
+
+.product-info h3 {
+    font-family: "Clear Sans";
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #FFFFFF; /* Color del título */
+}
+
+.product-info p {
+    font-family: "Black Ops One";
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* Color de la descripción */
+}
+
+/* Estilos para la sección de Productos Instalados */
+.installed-products-section {
+    background-color: #333333; /* Color de fondo para la sección */
+    padding: 40px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del contenido al centro */
+    color: #FFFFFF; /* Color del texto */
+}
+
+/* Estilos para el título de la sección */
+.installed-products-section .section-title {
+    font-family: "Black Ops One";
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Estilos para el contenedor de productos */
+.installed-products-section .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos para cada tarjeta de producto instalado */
+.installed-products-section .product-card {
+    border: 1px solid #212121;
+    border-radius: 5px;
+    padding: 25px;
+    width: calc(30% - 20px); /* Ancho de cada tarjeta */
+    margin: 10px;
+    background-color: #212121;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.installed-products-section .product-card img {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+/* Estilos para la sección de información de contacto */
+.contact-section {
+    background-color: #333333; /* Color de fondo para la sección */
+    padding: 40px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del contenido al centro */
+    color: #ffffff; /* Color del texto */
+}
+
+.contact-details .section-title {
+    font-family: "Arial Black", sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #F2BE22;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Estilos para el mapa de Google Maps */
+.map {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px; /* Altura del mapa, ajusta según sea necesario */
+}
+
+.contact-details h2 {
+    font-size: 24px; /* Tamaño del título */
+    font-family: "Black Ops One";
+    margin-bottom: 10px; /* Espacio inferior */
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+.contact-details p {
+    font-size: 16px; /* Tamaño del texto */
+    margin-bottom: 8px; /* Espacio inferior */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Alineación específica para las secciones */
+.contact-details .left-section {
+    text-align: left; /* Alinea el contenido a la izquierda */
+    float: left; /* Alinea a la izquierda */
+    width: 50%; /* Ancho del contenedor */
+}
+
+.contact-details .right-section {
+    text-align: right; /* Alinea el contenido a la derecha */
+    float: right; /* Alinea a la derecha */
+    width: 50%; /* Ancho del contenedor */
+}
+
+/* Estilos para la tabla de horario de apertura */
+.business-hours {
+    margin-top: 20px; /* Espacio entre la información de contacto y el horario */
+    text-align: center;
+    color: #ffffff; /* Color del texto */
+}
+
+.business-hours table {
+    margin: 0 auto; /* Centra la tabla */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+}
+
+.business-hours th,
+.business-hours td {
+    border: 1px solid #F2BE22; /* Bordes de la tabla */
+    padding: 8px 16px; /* Espaciado interno de las celdas */
+}
+
+.business-hours th {
+    background-color: #333333; /* Color de fondo para las cabeceras */
+    color: #ffffff; /* Color del texto en las cabeceras */
+}
+
+.members-login {
+    display: inline-block;
+    margin-right: 20px; /* Ajusta el margen según necesites */
+}
+
+.members-login a {
+    margin-right: 10px; /* Espaciado entre los botones */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    .product-card,
+    .installed-products-section .product-card {
+        width: calc(50% - 20px); /* Ancho de las tarjetas para pantallas más pequeñas */
+    }
+
+    .section-title {
+        font-size: 30px; /* Reduce el tamaño del título para pantallas más pequeñas */
+    }
+
+    header {
+        padding: 5px; /* Ajusta el relleno para pantallas más pequeñas */
+    }
+
+    header img {
+        max-width: 75%; /* Ajusta el tamaño máximo de la imagen del encabezado */
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .contact-details .left-section,
+    .contact-details .right-section {
+        width: 100%; /* Ajusta el ancho de los contenedores al 100% para pantallas más pequeñas */
+        float: none; /* Elimina el flotado para que los elementos se apilen verticalmente */
+        margin-bottom: 20px; /* Añade un margen inferior entre los contenedores */
+    }
+}
+

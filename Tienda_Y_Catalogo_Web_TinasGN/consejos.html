@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Videos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Black+Ops+One&family=Clear+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/consejos.css">
+</head>
+<body>
+    <header>
+        <h1>Consejos de instalacion</h1>
+        <nav>
+            <ul>
+                <li><a href="MenuTienda.php">INICIO</a></li>
+                <li><a href="productos.php">PRODUCTOS</a></li>
+                <li><a href="MenuTienda.php#productos-instalados">PRODUCTOS INSTALADOS</a></li>
+                <li><a href="comentarios.html">COMENTARIOS</a></li>
+                <li><a href="#consejos">CONSEJOS</a></li>
+                <li><a href="MenuTienda.php#contacto">CONTACTENOS</a></li>
+                <li><a href="MenuTienda.php#miembros">MIEMBROS</a></li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product-section">
+            <h2 class="section-title">Tornos</h2>
+        <div class="video-container">
+            <div class="video-card">
+                <h2>Video 1</h2>
+                <video controls>
+                    <source src="./img/Ds9.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+
+
+        </div>
+        <section class="tinas-section">
+            <h2 class="section-title">Tinas</h2>
+        <div class="video-container">
+            <div class="video-card">
+                <h2>Video 1</h2>
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+            <div class="video-card">
+                <h2>Video 2</h2>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+    </main>
+    <footer>
+        <p>© 2024 Galería de Videos</p>
+    </footer>
+</body>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        toggle.addEventListener('click', function () {
+            nav.classList.toggle('active');
+        });
+
+        // Detectar cambios en el ancho de la ventana para ocultar el menú
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) { // Cambia 768 según el punto de quiebre deseado
+                nav.classList.remove('active');
+            }
+        });
+    });
+</script>
+</html>

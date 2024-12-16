@@ -1,0 +1,192 @@
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #2B2B2B;
+            color: #FFFFFF;
+        }
+
+    /* Estilos para el encabezado */
+    header {
+        width: 100%;
+        background-color: #F2BE22;
+        padding: 20px;
+        color: #2B2B2B;
+        display: flex;
+        justify-content: flex-end; /* Alinea los elementos a la derecha */
+        align-items: center; /* Alinea verticalmente al centro */
+    }
+
+    h1 {
+        margin: 0; /* Elimina el margen predeterminado del encabezado h1 */
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #2B2B2B;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #F2BE22;
+    }
+
+    nav ul li a:hover {
+        background-color: #FFFFFF;
+        color: #2B2B2B;
+    }
+
+
+
+
+        /* Estilos para la tabla de pedidos */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        th {
+            background-color: #F2BE22;
+            color: #2B2B2B;
+        }
+
+        /* Estilos para los botones */
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #F2BE22;
+            color: #2B2B2B;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FFFFFF;
+            color: #2B2B2B;
+        }
+
+        /* Estilos para el encabezado y navegación responsivos */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #F2BE22;
+        }
+
+        nav ul li a:hover {
+            background-color: #FFFFFF;
+            color: #2B2B2B;
+        }
+
+    /* Estilos para la tabla de pedidos */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px;
+        border: 1px solid #FFFFFF; /* Añadido para el borde de la tabla */
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    th {
+        background-color: #F2BE22;
+        color: #2B2B2B;
+        border-right: 1px solid #FFFFFF; /* Añadido para separar las columnas */
+    }
+
+    td {
+        background-color: #2B2B2B; /* Cambiado para la celda de datos */
+        color: #FFFFFF; /* Cambiado para el texto en la celda de datos */
+        border-right: 1px solid #FFFFFF; /* Añadido para separar las columnas */
+    }
+
+    td:last-child {
+        border-right: none; /* Elimina el borde en la última columna */
+    }
+
+        /* Estilos para la tabla responsiva */
+        @media screen and (max-width: 768px) {
+            table {
+                margin: 10px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        /* Estilo para la lista desplegable */
+    select {
+        padding: 8px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        background-color: #2B2B2B;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+
+    /* Estilo para las opciones de la lista desplegable */
+    select option {
+        background-color: #2B2B2B;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+
+    /* Estilo para el botón de actualizar dentro del formulario */
+    form input[type='submit'] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #F2BE22;
+        color: #2B2B2B;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    form input[type='submit']:hover {
+        background-color: #FFFFFF;
+        color: #2B2B2B;
+    }
+
+
+

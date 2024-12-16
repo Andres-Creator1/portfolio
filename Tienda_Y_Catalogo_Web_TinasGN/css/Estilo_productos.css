@@ -1,0 +1,207 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2B2B2B;
+    color: #404040;
+  }
+  
+  
+  
+  
+  /* Encabezado */
+  header {
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+  
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px; 
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 12px;
+    color: #F2BE22;
+  }
+  
+  /* Estilos para el icono en el header */
+  header img {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  /* adaptativo */
+  @media only screen and (max-width: 768px) {
+    .tina-item,
+    .deco-item,
+    .torno-item {
+      width: calc(50% - 20px);
+    }
+  
+    header {
+      padding: 5px; 
+    }
+  
+    header img {
+      max-width: 75%; 
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    padding: 40px 0;
+    font-family: "Arial Black", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #F2BE22;
+    text-decoration: underline white solid;
+  }
+  
+  
+  /*tarjeta detras de cada apartado*/
+  .section-title {
+    background-color: #F2BE22; 
+    padding: 10px; 
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  
+  /* Texto de apartados*/
+  .tinas,
+  .deco,
+  .tor {
+    text-align: center;
+    padding: 40px 0;
+    color: black; 
+  }
+  
+  /* acomodar items */
+  .tinasp,
+  .decoP,
+  .tornoP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Estilos para las tarjetas de producto */
+  .tina-item,
+  .deco-item,
+  .torno-item  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: black;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    }
+  /*/ botón de detalles*/
+    .add-button {
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+      width: 15px;
+      height: 25px;
+      background-color: black;
+      color: #F2BE22;
+      font-size: 30px;
+      border: none;
+      cursor: pointer;
+    }
+  
+    /* Detalles de productos en botón */
+    .mensaje-overlay {
+      display: none;
+      position: absolute;
+      color: black;
+      background-color: #F2BE22;
+      border: 1px solid white;
+      padding: 10px;
+      z-index: 1;
+    }
+  
+    
+  
+  /* imágenes de los apartados */
+  .tina-item img,
+  .deco-item img,
+  .torno-item img {
+    width: 80%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  /* Precio de producto */
+  .tina-item p,
+  .deco-item p,
+  .torno-item p {
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el carrito */
+  .carrito {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .carrito h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los elementos individuales del carrito */
+  .carrito p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  

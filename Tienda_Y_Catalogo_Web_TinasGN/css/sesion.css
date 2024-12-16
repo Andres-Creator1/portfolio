@@ -1,0 +1,86 @@
+/* Estilos para el formulario */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establece la altura completa del viewport */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #262626;
+    color: #2B2B2B;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 300px;
+    background-color: #F2BE22;
+    text-align: center; /* Centra el contenido del formulario */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto; /* Esto centra horizontalmente los campos de entrada y los botones */
+}
+
+input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Estilos para el botón de registro */
+.login-buttons {
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    text-align: center; /* Centra el contenido del div */
+}
+
+.login-buttons a {
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #000;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Elimina el punto de lista */
+    margin-right: 5px; /* Añade un pequeño espacio entre los botones */
+}
+
+.login-buttons a:last-child {
+    margin-right: 0; /* Elimina el espacio del último botón */
+}
+
+.login-buttons a:hover {
+    background-color: #333;
+}
+
+/* Agrega estos estilos para cambiar el color del mensaje y del enlace */
+.registration-message {
+    color: white;
+}
+a {
+    color: white;
+}
+
+/* Estilos para el mensaje de registro exitoso */
+.registration-message {
+    color: white;
+}
+
